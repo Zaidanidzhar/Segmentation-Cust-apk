@@ -1,0 +1,7 @@
+<x-guest-layout><div class="auth-panel" style="min-height:100vh"><div class="auth-box">
+<div class="mb-5"><div class="text-[9px] uppercase tracking-[.16em] font700 text-[#858b88]">Account recovery</div><h1 class="text-[22px] font700 mt-1">Buat password baru</h1><p class="text-[10px] text-[#858b88] mt-1">Visscotton · Customer intelligence</p></div>
+<div class="auth-card p-6"><form method="POST" action="{{route('password.store')}}" class="space-y-4">@csrf<input type="hidden" name="token" value="{{$request->route('token')}}">
+<div><label class="auth-label" for="email">Email</label><input id="email" name="email" type="email" value="{{old('email',$request->email)}}" required autofocus class="auth-input mt-2">@error('email')<p class="text-[10px] text-[#a56868] mt-1">{{$message}}</p>@enderror</div>
+<div><label class="auth-label" for="password">Password baru</label><input id="password" name="password" type="password" required autocomplete="new-password" class="auth-input mt-2">@error('password')<p class="text-[10px] text-[#a56868] mt-1">{{$message}}</p>@enderror</div>
+<div><label class="auth-label" for="password_confirmation">Konfirmasi password</label><input id="password_confirmation" name="password_confirmation" type="password" required autocomplete="new-password" class="auth-input mt-2"></div>
+<button class="auth-btn">Simpan Password Baru</button></form></div><div class="text-center mt-4"><a href="{{route('landing')}}" class="auth-link">← Dashboard publik</a></div></div></div></x-guest-layout>

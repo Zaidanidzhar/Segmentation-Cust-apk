@@ -1,0 +1,1 @@
+@props(['disabled'=>false])<input @disabled($disabled) {{ $attributes->merge(['class'=>'w-full h-[38px] border border-[#dce1de] rounded px-2.5 text-[11px] bg-white outline-none']) }}>

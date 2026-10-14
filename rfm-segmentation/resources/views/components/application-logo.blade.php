@@ -1,0 +1,1 @@
+<span {{ $attributes->merge(['class'=>'inline-flex w-8 h-8 rounded bg-[#303537] text-white items-center justify-center text-[11px] font-bold']) }}>V</span>

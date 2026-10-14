@@ -1,0 +1,5 @@
+<x-guest-layout><div class="auth-panel" style="min-height:100vh"><div class="auth-box">
+<div class="mb-5"><div class="text-[9px] uppercase tracking-[.16em] font700 text-[#858b88]">Account verification</div><h1 class="text-[22px] font700 mt-1">Verifikasi email</h1><p class="text-[10px] text-[#858b88] mt-1">Visscotton · Customer intelligence</p></div>
+<div class="auth-card p-6"><p class="text-[11px] leading-5 text-[#7d8581] mb-5">Kami telah mengirim tautan verifikasi ke alamat email Anda. Buka email tersebut untuk mengaktifkan akun.</p>
+@if(session('status')=='verification-link-sent')<div class="auth-alert mb-4">Tautan verifikasi baru telah dikirim.</div>@endif
+<div class="flex items-center justify-between gap-3"><form method="POST" action="{{route('verification.send')}}">@csrf<button class="auth-btn !w-auto px-4">Kirim ulang email</button></form><form method="POST" action="{{route('logout')}}">@csrf<button type="submit" class="auth-link">Keluar</button></form></div></div><div class="text-center mt-4"><a href="{{route('landing')}}" class="auth-link">← Dashboard publik</a></div></div></div></x-guest-layout>

@@ -1,0 +1,5 @@
+{
+    "k_optimal": 4,
+    "silhouette_score": 0.5438162973660248,
+    "davies_bouldin_index": 0.5192628905210139
+}

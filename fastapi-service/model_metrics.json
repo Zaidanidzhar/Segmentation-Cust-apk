@@ -1,0 +1,29 @@
+{
+  "chosen_k": 4,
+  "silhouette_score": 0.5438,
+  "davies_bouldin_index": 0.5193,
+  "elbow_data": [
+    {"k": 2, "inertia": 565.0017},
+    {"k": 3, "inertia": 355.2292},
+    {"k": 4, "inertia": 184.6785},
+    {"k": 5, "inertia": 148.9576},
+    {"k": 6, "inertia": 114.4081},
+    {"k": 7, "inertia": 96.6407},
+    {"k": 8, "inertia": 81.5019}
+  ],
+  "euclidean_distance_by_k": [],
+  "silhouette_per_k": [0.6744, 0.5078, 0.5438, 0.4287, 0.4515, 0.4486, 0.4091],
+  "silhouette_k_range": [2, 3, 4, 5, 6, 7, 8],
+  "elbow_k_range": [2, 3, 4, 5, 6, 7, 8],
+  "elbow_inertias": [565.0017, 355.2292, 184.6785, 148.9576, 114.4081, 96.6407, 81.5019],
+  "centroid_distances": [
+    {"cluster_i": 0, "cluster_j": 1, "segment_i": "Champions", "segment_j": "Loyal Customers", "distance": 4.083},
+    {"cluster_i": 0, "cluster_j": 2, "segment_i": "Champions", "segment_j": "At Risk", "distance": 4.6049},
+    {"cluster_i": 0, "cluster_j": 3, "segment_i": "Champions", "segment_j": "Hibernating/Churn", "distance": 10.4166},
+    {"cluster_i": 1, "cluster_j": 2, "segment_i": "Loyal Customers", "segment_j": "At Risk", "distance": 1.7779},
+    {"cluster_i": 1, "cluster_j": 3, "segment_i": "Loyal Customers", "segment_j": "Hibernating/Churn", "distance": 7.9567},
+    {"cluster_i": 2, "cluster_j": 3, "segment_i": "At Risk", "segment_j": "Hibernating/Churn", "distance": 7.6032}
+  ],
+  "profiling": [],
+  "strategi": []
+}

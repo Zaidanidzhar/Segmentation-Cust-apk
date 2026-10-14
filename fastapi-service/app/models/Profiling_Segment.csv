@@ -1,0 +1,5 @@
+Segment,Jumlah_Pelanggan,Mean_Recency,Mean_Frequency,Mean_Monetary
+At Risk,1040,249.36,1.11,173930.86
+Champions,120,68.08,7.09,2996633.42
+Hibernating/Churn,33,154.39,1.0,0.0
+Loyal Customers,1425,74.07,1.19,215847.75

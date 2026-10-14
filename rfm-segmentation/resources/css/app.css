@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --page: #f4f6f2;
+    --surface: #ffffff;
+    --surface-muted: #eef2ed;
+    --line: #e2e5e1;
+    --ink: #18231f;
+    --muted: #69727d;
+    --accent: #315b4a;
+    --accent-soft: #e8f0eb;
+    --danger: #b42318;
+    --success: #287a52;
+  }
+  html { scroll-behavior: smooth; }
+  body { background-color: var(--page); background-image: linear-gradient(rgba(49,91,74,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(49,91,74,.035) 1px, transparent 1px); background-size: 28px 28px; color: var(--ink); font-family: 'DM Sans', ui-sans-serif, sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Space Grotesk', 'DM Sans', sans-serif; }
+  ::selection { background: #dbe7df; color: #18231f; }
+}
+
+@layer components {
+  .app-card { @apply bg-white border rounded-xl; border-color: var(--line); box-shadow: 0 8px 24px rgba(31,48,39,.045); }
+  .app-card-soft { @apply rounded-xl border; background: var(--surface-muted); border-color: var(--line); }
+  .app-label { @apply text-[11px] font-semibold uppercase tracking-[0.08em]; color: var(--muted); }
+  .app-title { @apply font-semibold tracking-tight; color: var(--ink); }
+  .app-btn { @apply inline-flex items-center justify-center rounded-lg px-4 py-2.5 text-sm font-semibold transition; background: var(--accent); color: white; box-shadow: 0 4px 10px rgba(49,91,74,.16); }
+  .app-btn:hover { background: #274b3d; }
+  .app-btn-secondary { @apply inline-flex items-center justify-center rounded-lg border px-4 py-2.5 text-sm font-semibold transition; border-color: var(--line); background: white; color: var(--ink); }
+  .app-btn-secondary:hover { background: var(--surface-muted); }
+  .app-input { @apply w-full rounded-xl border px-3 py-2.5 text-sm outline-none transition; border-color: var(--line); background: white; color: var(--ink); }
+  .app-input:focus { border-color: #7c9a8b; box-shadow: 0 0 0 3px #e8f0eb; }
+  .app-table th { @apply px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wide; color: var(--muted); background: #f5f7f4; }
+  .app-table td { @apply px-4 py-3 text-sm border-t; border-color: var(--line); }
+  .segment-badge { @apply inline-flex items-center rounded-full border px-2.5 py-1 text-[11px] font-semibold; }
+  .segment-champions { background:#e8f3ed; color:#286246; border-color:#c8dfd2; }
+  .segment-loyal { background:#edf3f8; color:#355d78; border-color:#d1e0ea; }
+  .segment-atrisk { background:#f7f1e7; color:#805f27; border-color:#eadcc1; }
+  .segment-hibernating { background:#f2eeee; color:#765454; border-color:#e1d5d5; }
+  .segment-default { background:#f2f3f2; color:#5e6670; border-color:#dfe2df; }
+}
+
+@layer utilities {
+  .animate-stagger > * { animation: fade-in .35s ease-out both; }
+  .animate-stagger > *:nth-child(2) { animation-delay: .05s; }
+  .animate-stagger > *:nth-child(3) { animation-delay: .1s; }
+  .animate-stagger > *:nth-child(4) { animation-delay: .15s; }
+}
+
+.animate-fade-in { animation: fade-in .25s ease-out both; }
+@keyframes fade-in { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
