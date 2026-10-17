@@ -1,0 +1,20 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+.venv/
+venv/
+*.py[cod]
+
+# Node.js
+node_modules/
+
+# Laravel
+/vendor/
+/storage/logs/
+
+# Dataset RFM
+/data/
