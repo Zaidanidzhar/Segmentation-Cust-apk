@@ -15,3 +15,4 @@
 - 2026-11-05: Review struktur folder backend
 - 2026-11-05: Cek ulang dependency FastAPI
 - 2026-11-05: Review struktur folder backend
+- 2026-11-05: Catat ide fitur dashboard Laravel
