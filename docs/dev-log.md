@@ -13,3 +13,4 @@
 - 2026-11-05: Update catatan setup environment
 - 2026-11-05: Review hasil clustering
 - 2026-11-05: Review struktur folder backend
+- 2026-11-05: Cek ulang dependency FastAPI
