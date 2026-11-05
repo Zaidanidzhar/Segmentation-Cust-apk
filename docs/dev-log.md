@@ -19,3 +19,4 @@
 - 2026-11-05: Rapihin dokumentasi endpoint
 - 2026-11-05: Catat ide fitur dashboard Laravel
 - 2026-11-05: Rapihin dokumentasi endpoint
+- 2026-11-05: Review struktur folder backend
