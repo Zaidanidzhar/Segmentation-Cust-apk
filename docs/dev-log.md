@@ -11,3 +11,4 @@
 - 2026-11-02: Catat rencana optimasi query
 - 2026-11-04: Update catatan setup environment
 - 2026-11-05: Update catatan setup environment
+- 2026-11-05: Review hasil clustering
