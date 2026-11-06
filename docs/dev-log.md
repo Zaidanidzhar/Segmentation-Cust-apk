@@ -25,3 +25,4 @@
 - 2026-11-05: Catat rencana optimasi query
 - 2026-11-06: Catat ide fitur dashboard Laravel
 - 2026-11-06: Review hasil clustering
+- 2026-11-06: Catat rencana optimasi query
