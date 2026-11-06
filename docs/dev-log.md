@@ -23,3 +23,4 @@
 - 2026-11-05: Cek ulang dependency FastAPI
 - 2026-11-05: Review hasil clustering
 - 2026-11-05: Catat rencana optimasi query
+- 2026-11-06: Catat ide fitur dashboard Laravel
